@@ -1,0 +1,11 @@
+APP_MODULES := NativeCode
+APP_STL := gnustl_static
+APP_PLATFORM := android-10
+APP_CPPFLAGS += -w
+APP_CPPFLAGS += -fno-strict-aliasing
+APP_CPPFLAGS += -DDEBUG
+APP_CPPFLAGS += -fexceptions
+APP_CPPFLAGS += -frtti
+APP_CPPFLAGS += -lstdc++
+APP_CFLAGS   +=  -I$(ANDROID_NDK)/sources/cxx-stl/gnu-libstdc++/include/  -I$(LOCAL_PATH)
+APP_CPPFLAGS += -DANDROID_NDK -DOS_ANDROID 

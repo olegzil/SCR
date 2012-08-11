@@ -1,0 +1,5 @@
+import os
+env = Environment()
+
+src_files = ['main.cpp']
+Program(source = src_files, target = 'JsonTest', CPPPATH = ['.', '../CommonFiles'], CCFLAGS='-g -I../CommonCode -I/usr/local/include/boost_1_49_0')

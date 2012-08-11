@@ -1,0 +1,50 @@
+{
+  "array" : [1,5],        //test array
+  "Name": "SceneGraph1",  //name of scene graph
+  "directory":            //unique id.
+    {
+      "textures" : [ "coolTexture.jpeg", "text3.png", "texture5.png"],
+      "audio" : ["ding.wav", "explotion.wav", "impact.wav", "miss.wav"]
+    },
+
+  "Objects": [
+    {
+      "Name" : "Sphere One",
+      "id" : "12345",
+      "class" : "Sphere",
+      "geomData" : ["none"],
+      "position": [0.5, 0.5, 0.5],
+      "rotation" : [0.0, 0.0, 0.0, 0.0],
+      "slices" : 50,
+      "radius" : 0.5
+    },
+    {
+      "Name" : "Sphere Two",                //non-unique name
+      "id" : "44566678",                    //unique id.
+      "class" : "Sphere",                   //name of c++ class to instanciate to handle this object. If not specified, then a vertices and, optionally, indeces must be present
+      "repeat_count" : 10,                  //number of times to duplicate this entity in the scene graph
+      "offset_vector" : [0.2, 0.0, 1.0],    //offset to apply to each new instance of this object
+      "incremental" : true,                 //if present and set to true then both offset vector and rotation are treated as an increment value not an absolute value.
+      "position" : [0.5,0.1,10],            //position of the first instance of the object
+      "rotation" : [0,0,0,0,],              //quaternion rotation of the first instance of object
+      "slices" : 10,                        //object-specific data, in this case number of slices in this sphere
+      "radius" : 0.50                       //ojbect-specific data, in thiscase sphere radius
+    },
+    {
+      "Name" : "Cube",
+      "id" : "45678", 
+      "class" : "sphere",   
+      "position": [0.2, 0.2, 0.5],
+      "rotation" : [0.0, 0.0, 0.0, 0.0],
+      "indeces" : [ 0, 2, 1, 0, 3, 2, 4, 5, 6, 4, 6, 7, 8, 9, 10, 8, 10, 11, 12, 15, 14, 12, 14, 13, 16, 17, 18, 16, 18, 19, 20, 23, 22, 20, 22, 21],
+      "vertices" : [  -0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5,
+       -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5,
+      0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, -0.5,
+      -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5,
+      -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5,
+      0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5, 0.5,
+      -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5,
+      0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5]
+    }
+  ]
+}

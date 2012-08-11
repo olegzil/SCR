@@ -1,0 +1,124 @@
+{
+  "array" : [1,5], //test array 
+  "Name": "SceneGraph1",  //name of scene graph
+  "objectCount": 8,       //non-unique name
+  "directory":            //unique id.
+    {
+      "textures" : [ "coolTexture.jpeg", "text3.png", "texture5.png"],
+      "audio" : ["ding.wav", "explotion.wav", "impact.wav", "miss.wav"]
+    },
+
+  "SceneGraph": [  
+    {
+      "Name" : "Sphere 1",
+      "class" : "sphere",
+      "slices" : 50,
+      "radius" : 0.5,
+      "position" : [0.5, 0.5, 0.5],
+      "textures" : [ "coolTexture.jpeg", "text3.png", "texture5.png"]
+    },
+    {
+      "Name" : "Sphere 2",
+      "class" : "sphere",
+      "position" : [0.5, 0.5, 0.5],
+      "slices" : 50,
+      "radius" : 0.5
+    },
+    {
+      "Name" : "Sphere 3",
+      "class" : "sphere",
+      "position" : [0.5, 0.5, 0.5],
+      "slices" : 50,
+      "radius" : 0.5,
+      "textures" : [ "coolTexture.jpeg", "text3.png", "texture5.png"]
+    },
+    {
+      "Name" : "Sphere 4",
+      "position" : [0.5, 0.5, 0.5],
+      "class" : "sphere",
+      "slices" : 50,
+      "radius" : 0.5,
+      "textures" : [ "coolTexture.jpeg", "text3.png", "texture5.png"]
+    },
+    {
+      "Name" : "Sphere 5",
+      "position" : [0.5, 0.5, 0.5],
+      "class" : "sphere",
+      "slices" : 50,
+      "radius" : 0.5
+    },
+    {
+      "Name" : "Sphere 6",
+      "position" : [0.5, 0.5, 0.5],
+      "class" : "sphere",
+      "slices" : 50,
+      "radius" : 0.5
+    },
+    {
+      "Name" : "Sphere 7",
+      "class" : "sphere",
+      "position" : [0.5, 0.5, 0.5],
+      "slices" : 50,
+      "radius" : 0.5
+    },
+    {
+      "Name" : "Sphere 8",
+      "class" : "sphere",
+      "position" : [0.5, 0.5, 0.5],
+      "slices" : 50,
+      "radius" : 0.5
+    },
+    {
+      "Name" : "Sphere 9",
+      "class" : "sphere",
+      "position" : [0.5, 0.5, 0.5],
+      "slices" : 50,
+      "radius" : 0.5
+    },
+    {
+      "Name" : "Sphere 10",
+      "class" : "sphere",
+      "position" : [0.5, 0.5, 0.5],
+      "slices" : 50,
+      "radius" : 0.5
+    },
+    {
+      "Name" : "Sphere One",
+      "id" : "12345",
+      "position" : [0.5, 0.5, 0.5],
+      "class" : "sphere",
+      "geomData" : ["none"],
+      "position": [0.5, 0.5, 0.5],
+      "rotation" : [0.0, 0.0, 0.0, 0.0],
+      "slices" : 50,
+      "radius" : 0.5
+    },
+    {
+      "Name" : "Sphere Two",                //non-unique name
+      "id" : "44566678",                    //unique id.
+      "class" : "sphere",                   //name of c++ class to instanciate to handle this object. If not specified, then a vertices and, optionally, indeces must be present
+      "position" : [0.5, 0.5, 0.5],
+      "repeat_count" : 10,                  //number of times to duplicate this entity in the scene graph
+      "offset" : [0.1, 0.1, 0.1],           //offset to aply to the postion of the next instance
+      "rotation" : [0,0,0,0,],              //quaternion rotation of each instance of object
+      "slices" : 10,                        //object-specific data, in this case number of slices in this sphere
+      "radius" : 0.50                       //ojbect-specific data, in thiscase sphere radius
+    },
+    {
+      "Name" : "Cube",
+      "id" : "45678",    
+      "class" : "polytope",
+      "position": [0.2, 0.2, 0.5],
+      "rotation" : [0.0, 0.0, 0.0, 0.0],
+      "indeces" : [ 0, 2, 1, 0, 3, 2, 4, 5, 6, 4, 6, 7, 8, 9, 10, 8, 10, 11, 12, 15, 14, 12, 14, 13, 16, 17, 18, 16, 18, 19, 20, 23, 22, 20, 22, 21],
+      "vertices" : [  -0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5,
+       -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5,
+      0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, -0.5,
+      -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5,
+      -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5,
+      0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5, 0.5,
+      -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5,
+      0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+	"contact key" : 
+	[
+		{
+			"uniqueID" : "time stamp",
+			"contactheader" : 
+			{
+				"name":"John Doe", 
+				"phone": "415-233-1739", 
+				"email": "olegzilberman.zilberman@gmail.com"
+			},
+			"payload" : 
+			{
+			"message" : "Sale",
+			"lat" : 12223.1122,
+			"long" : 12858534.99
+			}
+		}
+	]
+}
